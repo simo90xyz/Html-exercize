@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Lezione HTML</title>
+	<style>
+		*
+		{
+			padding: 0%;
+			margin: 0%;
+			box-sizing: border-box;
+		}
+		body
+		{
+			display: flex;
+			
+		}
+		.main
+		{
+			border: solid 1px black;
+			width: 500px;
+			height: 500px;
+			margin-left: 50px;
+			padding: 5%;
+			margin-top: 50px;
+		}
+		.aside
+		{   margin-top: 50px;
+			border: solid 1px black;
+			width: 500px;
+			height: 500px;
+			margin-left: 150px;
+			
+			padding: 5%;
+		}
+		.list-style
+		{
+			list-style-type: none;
+			text-align: center;
+		}
+        .language
+        {
+            margin-top: 20px;
+        }
+		
+		
+
+
+	</style>
+</head>
+
+<body>
+<main class="main">
+<header >
+<p>
+	<i>Alcuni utili tag inline sono il tag</i>
+	<cite>
+	<strong>"cite"</strong>
+	</cite> 
+	<sup>, il tagsup</sup> 
+	<sub>o sub</sub>
+	<i> ... ah già, anche il tag i</i>
+	<strong> o strong</strong>
+    </p>
+	</header>
+	<br>
+	<br>
+    <p> Come puoi vedere il tag
+	<span>P</span>
+	<span> invece non è inline.</span>
+	<strong> Ricorda di non mettere mai un 
+		     tag p dentro l'altro.
+    </strong>
+	<br>
+	<sub> Usa invece il tag</sub> 
+	
+	<span> span o tag specifici</span>
+    
+    </p>
+
+    </main>
+	
+    <aside class="aside">
+	<p>
+	<pre>Anche i tag main e aside 
+    </pre>
+
+	<pre>
+	sono dei tag block.
+   </pre>
+	<br/>
+	<pre> 
+		<li class="list-style">
+	  <a href="">vuoi creare un layout dove aside</a>
+		</li> 
+   </pre>
+   <br>
+   <pre>sia effettivamente accanto al
+	main
+	dovrai infatti usare del CSS.
+   </pre>
+	</p>
+</aside>
+<footer class="language">
+    <label for="language-selector"></label>
+    <select id="language-selector" name="language">
+        <option value="en-US">English (US)</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="pt-BR">Português (do&nbsp;Brasil)</option>
+        <option value="ru">Русский</option>
+        <option value="zh-CN">中文 (简体)</option>
+     </select>
+    
+</footer>
+</body>
+
+</html>

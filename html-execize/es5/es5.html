@@ -9,55 +9,40 @@
     <style>
     img{max-width:300px;}
 
-    section
-    {
+    section{
         display: flex;
         justify-content: center;
         background-color: cornflowerblue;
         height: 480px;
-      
     }
-    .image1
-    {
+    .image1{
         margin: right 250px;
         height: 300px;
         margin-top: 80px;
         display: flex;
-        
     }
     
-    .image2
-    {
+    .image2{
         margin-left: 250px;
         height: 300px;
         margin-top: 80px;
-       
-       
     }
-    header
-    {
+    header{
         background-color: darkkhaki;
         height: 50px;
     }
 
-    footer
-    {
+    footer{
         height: 50px;
         background-color: goldenrod;
     }
-
-    
-
-    
-    </style>
+</style>
 </head>
-
 <body>
     
         <header>
-  
             <label style="margin-left: 50px;" for="language-selector">My language is not here </label>
-            <br>
+              <br>
             <select style="margin-left: 50px;  id="language-selector" name="language">
                 <option value="en-US">English (US)</option>
                 <option value="es">Español</option>
@@ -68,7 +53,6 @@
                 <option value="ru">Русский</option>
                 <option value="zh-CN">中文 (简体)</option>
              </select>
-
         </header>
         <br>
         <section>
@@ -78,38 +62,28 @@
                     src="assets/business-man.webp" 
                     alt="Immagine 1"
                     srcset="assets\business-man.jpg"/>
-
-                   
-
-            </article>
+                </article>
             <article>
                 <img class="image2"
                 src="assets/ok-hand.webp" 
                 alt="Immagine 2"   
                 srcset="assets/ok-hand.jpg"/>
-
-            </article>
-            
-        </section>
+          </article>
+    </section>
         <br>
         <br>
-
-                <footer>
-                    <footer>
-                        <label for="rox">input-date</label>
-                        <input type="date" name="rox" id="rox">
-                        <br>
-                        input-checkbox
-                        <input type="checkbox" checked>
-      
-                       
-                    </footer>
+        <footer>
+            <label for="rox">input-date</label>
+            <input type="date" name="rox" id="rox">
+            <br>
+            input-checkbox without label
+            <input type="checkbox" checked>
+        </footer>
                
                 
-               </footer>
+ 
   
 
 
 </body>
-
 </html>

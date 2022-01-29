@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="my first form">
+	<meta name="author" content="Simo">
+	<link rel="short-cut icon" href="https://www.kindpng.com/picc/m/206-2061683_favicon-hd-png-download.png" type="image/x-icon">
+    <meta property="og:type" content="form">
+    <meta property="og:url" content="#">
+    <meta property="og:title" content="form One">
+    <meta property="og:image" content="https://pad.mymovies.it/filmclub/2006/01/052/locandina.jpg">
+    <meta property="og:description" content="first form">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="">
+    <title>esercizio numero 7</title>
+	<style>
+		label {
+			display: block;
+			margin: 10px;
+		}
+		input{
+			margin-left: 5px;
+			display: list-item;
+		}
+		select{
+			display: list-item;
+			margin-left: 5px;
+		}
+		.containar2{
+			
+		    display: grid;
+			grid-template-columns: 1fr 1fr ;
+			grid-template-rows: 200px ;
+			grid-gap: 10px;    
+		}
+		.box1{
+			 grid-column: 1/2;
+             grid-row: 1;
+             padding: 30px;
+			 margin-left: 350px;
+		}
+		.box2{
+			 grid-column: 2/3;
+             grid-row: 1;
+             padding: 30px;
+			 margin-left: 50px;	     
+        }
+		.containar3{
+			display: list-item; 
+        }
+		.submit{
+			margin-left: 5px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Modulo di registrazione</h1>
+	</header>
+	<section>
+		<h2>Dati anagrafici</h2>
+		<fieldset class="containar1">
+			<form action="#" method="post">
+				<div>
+					<label for="email">
+						<span>Email</span> 
+						<input type="email" name="email" id="email">
+					</label>
+				</div>
+			<br>
+				<div>
+					<label for="password">
+						<span>Password</span> 
+						<input type="password" name="password" id="password">
+					</label>
+				</div>
+			<br>
+			   <div>
+				  <label for="nome">
+					   <span>Nome</span> 
+					   <input type="text" id="nome" name="nome">
+				  </label>
+			   </div>
+			<br>
+				<div>
+					<label for="cognome">
+						<span>Cognome</span>
+						<input type="text" id="cognome" name="Cognome">
+					</label>
+				</div>
+			<br>
+				<div>
+					<label for="">
+						<span> Data di nascita</span>
+						<input type="date" name="Data" id="Data">
+					</label>
+				</div>
+			<br>
+				<div>
+					<label for="tel">
+						<span>Numero di telefono</span>
+						<input type="tel" name="tel" id="tel">
+					</label>
+				</div>
+		</section>
+   </fieldset>
+		<br>
+		  <br>
+		  <section>
+		    <h1>Choose your plane $</h1>
+		  <fieldset class="containar2">   
+			  <div class="box1">
+				<label  for="abb">
+					<span>Free plane
+					    <strong><abbr title="*">$</abbr></strong>	
+					</span>
+			       <select  name="abb" id="abb">plane
+						<optgroup label="free plane">
+							<option selected value="first month">1 mese Gratis </option>
+						</optgroup>
+						<optgroup label="premium">
+							<option value=a>"1 mese 55$"</option>
+							<option value=s>"2 mesi 85$"</option>
+							<option value=d>"3 mesi 108$"</option>
+					   </optgroup>
+				   </select>
+				</label>	   
+			</div>
+			<br>
+			<div class="box2">
+				<label  for="abb2">
+					<span>Premium plus
+					    <strong><abbr title="*">$</abbr></strong>	
+					</span>
+			       <select  name="abb2" id="abb2">plane
+						<optgroup  label="premium plus">
+							<option value=a2>"1 anno 177$"</option>
+							<option value=s2>"2 anni 285$"</option>
+							<option value=d2>"3 anni 398$"</option>
+					   </optgroup>
+				   </select>
+				</label>
+				<label for="abb2">scopri i vantaggi Pro
+					<input checked type="checkbox" name="abb2" id="abb2">
+				</label>	   
+				<label for="abb3"> senza vantaggi Pro
+					<input  type="checkbox" name="abb3" id="abb3">
+				</label>		
+			</div>
+         </section>
+    </fieldset>
+		 <br>
+		  <section>
+			    <h2>Put your card date</h2>
+				<h3> 
+				   <i> i campi contrassegnati in * sono obbligatori </i>  
+				</h3>
+			  <fieldset class="containar3">
+				<div class="credit card">
+					<label for="number">
+						<span>Number your card
+							<strong><abbr title="*">*</abbr></strong>
+						</span>
+					</label>
+					<input type="text" maxlength="16" id="number" name="number" required>
+	           </div>
+			<br>
+			   <div class="date card">
+				    <label for="date card">
+					    <span>Mese di scadenza MM
+							<strong><abbr title="*">*</abbr></strong>
+						</span>
+				    </label>
+				    <select name="datacard" id="datacard" required>
+				        <option selected disabled value="month">month</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+		       </div>
+			<br>
+			<div class="date card">
+				<label for="date y card">
+					<span>Anno di scadenza YY
+						<strong><abbr title="*">*</abbr></strong>
+					</span>
+				</label>
+				<select name="data y card" id="data y card" required>
+					<option selected disabled value="year">year</option>
+					<option value="01">2021</option>
+					<option value="02">2022</option>
+					<option value="03">2023</option>
+					<option value="04">2024</option>
+					<option value="05">2025</option>
+					<option value="06">2026</option>
+					<option value="07">2027</option>
+					<option value="08">2028</option>
+					<option value="09">2029</option>
+					<option value="10">2030</option>
+					<option value="11">2031</option>
+					<option value="12">2032</option>
+				</select>
+		     </div>
+	       <br>
+		     <br>
+		       <div>
+				  <label for="cvv">
+					  <span>CVV
+						<strong><abbr title="*">*</abbr></strong>
+					  </span>
+				  </label>
+					<input maxlength="3" name="cvv" id="cvv" type="text" required>
+			  </div>
+			<br>
+			   <div class="submit">
+				   <button type="submit">Paga adesso</button>
+			   </div>
+		    </fieldset>
+		  </section>      
+	   </form>
+   </body>
+</html>
+	
+		
+ 
+	

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Lezione HTML</title>
+	<style>
+		label {
+			display: block
+		}
+	</style>
+</head>
+
+<body>
+	<main>
+		<header>
+			<h3>
+				<i>I campi contrassegnati in * sono obbligatori</i>
+			</h3>
+        </header>	
+		   <fieldset>	
+				<form action="#">
+					<section class="box-dati">
+						<div>
+							<label for="form-email">Email
+								<span>
+									<abbr title="">
+										*
+									</abbr>
+								</span>
+							</label>
+							<input type="email" id="form-email" name="email" required/>
+							<label for="form-pass">Password
+								<span>
+									<abbr title="*">
+										*
+									</abbr>
+								</span>
+							</label>
+							<input type="password" id="form-pass" name="pass" required/>
+						</div>
+						<div>
+							<label for="form-name">Nome e cognome
+								<span>
+									<abbr title="*">
+										*
+									</abbr>
+								</span>
+							</label>
+							<input type="text" id="form-name" name="name" required/>
+							<label for="form-dob">Data di nascita
+								<span>
+									<abbr title="*">
+										*
+									</abbr>
+								</span>
+							</label>
+							<input type="date" id="form-dob" name="dob" required/>
+							<label for="form-tel">Telefono
+								<span><abbr title="*">*</abbr></span>
+							</label>
+							<input type="tel" id="form-tel" name="tel" required/>
+						</div>
+				</section>
+			<br><br>
+					<section class="premium">
+						<div>
+							<label for="form-plan">Piano di abbonamento
+								<span>
+									<abbr title="*">*</abbr>
+								</span>
+							</label>
+							<select id="form-plan" name="plan" required>
+								<option value="0">Free</option>
+								<optgroup label="Mensili">
+									<option value="199">1.99€/mese</option>
+									<option value="599">5.99€/mese</option>
+									<option value="1199">11.99€/mese</option>
+								</optgroup>
+							</select>
+					</section>	
+				  <br>
+				  <section>
+					   <div>
+							<label for="form-pro">Piano PRO 
+								<span>
+								<abbr title="*">*</abbr>
+								</span>	
+									<input type="checkbox" name="pro" checked id="form-pro" required> <!--perche checked non va?-->
+							</label>
+						</div>
+					</section>
+				  <br>
+					<section class="credit card">
+						<div>
+							<label for="form-cc">Numero Carta
+									<span>
+										<abbr title="*">*</abbr>
+									</span>
+								</label>
+								<input maxlength="16" placeholder="put the numbers"  id="form-cc" name="cc" type="text" pattern=".{13,}" required/>
+								<label for="form-cvc">CVC
+									<span>
+										<abbr title="*">*</abbr>
+									</span>
+								</label>
+								<input maxlength="3" id="form-cvc" name="cvc" type="text" placeholder="only number" pattern= ".{1,}" required/>
+								<label for="form-exp">Scadenza
+									<span>
+										<abbr title="*">*</abbr>
+									</span>
+								</label>
+								<input id="form-exp" name="exp" type="date" required/>
+								<label for="form-address">Indirizzo di fatturazione
+									<span>
+										<abbr title="*">*</abbr>
+									</span>
+								</label>
+								<input type="text" id="form-address" name="address" required/>
+							</div>
+                       </section>
+					</fieldset>  
+			       <br>
+				<div class="submit">
+					<button type="submit">Registrati</button>
+				</div>
+	       </form> 
+	 </main>
+</body>
+</html>
+
+<!--domanda: perche il checked sull input PRO non va?
+è migliore la semantica di quest eserzio o del esercizio numero 7,  eseguito in precedenza?
+e corretto inserire piu fieldset o ne basta solo uno?
+in questo caso ho inserito tre sezioni e un solo fieldset tutto all' interno del main e body-->
